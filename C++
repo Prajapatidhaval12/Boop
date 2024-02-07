@@ -1,0 +1,131 @@
+1. create github account
+2. instll git tool
+	test using git command on cmd
+
+3. create local repo/directory 
+	open cmd in the same 
+
+git init
+git status
+git add -A
+git commit -m "first commit"
+git config --global user.email "dkprajapati9218@gmail.com"
+git config --global user.name "prajapatidhaval12"
+
+git push -u origin main
+
+
+
+
+
+
+
+
+---code---
+Microsoft Windows [Version 10.0.17763.55]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+E:\boop>git init
+Initialized empty Git repository in E:/boop/.git/
+
+E:\boop>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pr1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\boop>git add pr1.txt
+
+E:\boop>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   pr1.txt
+
+
+E:\boop>git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@DESKTOP-6L4SLED.(none)')
+
+E:\boop>git config --global user.email "dkprajapati9218@gmail.com"
+
+E:\boop>git config --global user.name "prajapatidhaval12"
+
+E:\boop>git commit -m "first commit"
+[master (root-commit) c3f3536] first commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 pr1.txt
+
+E:\boop>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   pr1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\boop>git add -A
+
+E:\boop>git commit -m "first commit"
+[master cc895fe] first commit
+ 1 file changed, 11 insertions(+)
+
+E:\boop>git status
+On branch master
+nothing to commit, working tree clean
+
+E:\boop>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+E:\boop>git remote add origin https://github.com/prajapatidhaval12/Boop.git
+
+E:\boop>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/prajapatidhaval12/Boop.git'
+
+E:\boop>git add -A
+
+E:\boop>git commit -m "first commit"
+On branch master
+nothing to commit, working tree clean
+
+E:\boop>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/prajapatidhaval12/Boop.git'
+
+E:\boop>git branch -M main
+
+E:\boop>git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 626 bytes | 626.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Govindprajapti12/Boop.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+E:\boop>
